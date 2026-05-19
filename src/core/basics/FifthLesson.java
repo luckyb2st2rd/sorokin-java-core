@@ -1,7 +1,5 @@
 package core.basics;
 
-import java.util.Arrays;
-
 public class FifthLesson {
     public static void main(String[] args) {
         int[] numbers = new int[5];
