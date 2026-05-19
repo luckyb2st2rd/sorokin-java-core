@@ -14,8 +14,8 @@ public class FifthLesson {
 
         StringJoiner sj1 = new StringJoiner(" ", "[", "]");
         numbers[0] = 1;
-        for (int i = 0; i < numbers.length; i++) {
-            sj1.add(String.valueOf(numbers[i]));
+        for (int number : numbers) {
+            sj1.add(String.valueOf(number));
         }
         System.out.println("Массив после замены первого элемента: " + sj1);
     }
