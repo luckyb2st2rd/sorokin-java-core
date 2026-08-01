@@ -1,6 +1,5 @@
 package core.basics;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class ArraysFirst {

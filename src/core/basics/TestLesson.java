@@ -1,7 +1,5 @@
 package core.basics;
 
-import java.util.StringJoiner;
-
 public class TestLesson {
     public static void main(String[] args) {
         int age = 23;
