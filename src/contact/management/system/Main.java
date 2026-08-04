@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String[] names = new String[100];
-        int[] phoneNumbers = new int[100];
+        String[] phoneNumbers = new String[100];
         int count = 0;
         System.out.println("Select a menu item\n"
                 + "1. Add contact\n"
@@ -16,14 +16,17 @@ public class Main {
                 + "5. Exit");
 
         int pick = scanner.nextInt();
+        scanner.nextLine();
+
         while (pick > 0 && pick != 5 && pick < 6) {
 
             if (pick == 1) {
                 if (count < names.length) {
-                    System.out.print("Write your name");
+                    System.out.println("Write your name");
                     String name = scanner.nextLine();
-                    System.out.print("Write your phone number");
-                    int number = scanner.nextInt();
+
+                    System.out.println("Write your phone number");
+                    String number = scanner.nextLine();
                     names[count] = name;
                     phoneNumbers[count] = number;
                     count++;
@@ -31,6 +34,9 @@ public class Main {
                 } else {
                     System.out.println("No free space left.");
                 }
+            }
+            if (pick == 2) {
+
             }
         }
     }
