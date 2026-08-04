@@ -8,14 +8,16 @@ public class Main {
         String[] names = new String[100];
         int[] phoneNumbers = new int[100];
         int count = 0;
-        System.out.println("Select a menu item\n" +
-                "1. Add contact\n" +
-                "2. View contacts\n" +
-                "3. Find a contact\n" +
-                "4. Delete contact\n" +
-                "5. Exit");
+        System.out.println("Select a menu item\n"
+                + "1. Add contact\n"
+                + "2. View contacts\n"
+                + "3. Find a contact\n"
+                + "4. Delete contact\n"
+                + "5. Exit");
+
         int pick = scanner.nextInt();
         while (pick > 0 && pick != 5 && pick < 6) {
+
             if (pick == 1) {
                 if (count < names.length) {
                     System.out.print("Write your name");
